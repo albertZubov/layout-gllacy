@@ -6,7 +6,7 @@
 	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet"> -->
 	<link rel="stylesheet"  href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<title>Gllacy</title>
+	<title>Gllacy Shop</title>
 </head>
 <body>
 	<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -16,7 +16,7 @@
 		<div class="container">
 			<header class="main-header">
 				<nav class="main-navigation">
-					<a class="sign header-logo"><img src="#0" width="" height="" alt="Логотип Глэйси"></a>
+					<a class="header-logo"><img src="img/logo.svg" width="154" height="64" alt="Логотип магазина Глэйси"></a>
 					<ul class="site-navigation">
 						<li><a href="#0">Каталог</a>
 					<!--<ul class="catalog-menu">
@@ -32,6 +32,7 @@
 		</ul>
 		<div class="user-navigation">
 			<form class="search-form" action="#0" method="post">
+				<input name="search" type="search">
 				<button type="submit">Поиск</button>
 			</form>
 			<ul class="user-navigation-option">
@@ -39,7 +40,7 @@
 					<!--<form class="entrance-form">
 					<input type="email" name="email" placeholder="Электронная почта">
 					<input type="password" name="password" placeholder="Пароль">
-					<button class="button" type="button">Войти</button>
+					<button class="button" type="submit">Войти</button>
 					<ul>
 						<li><a href="">Забыли пароль ?</a></li>
 						<li><a href="">Новая регистрация</a></li>
@@ -83,6 +84,7 @@
 	</ul>
 </section>
 <main class="main-contents">
+	<h1 class="visually-hidden">Магазин Глэйси</h1>
 	<section class="banners-product">
 		<div class="additive-raspberry">
 			<h3>Малинка даром!</h3>
@@ -96,29 +98,39 @@
 		</div>
 	</section>
 	<section class="hits-product">
-		<div class="types-ice_cream">
-			<img src="" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
-			<h3>310/кг</h3>
-			<p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-		</div>
-		<div class="types-ice_cream">
-			<img src="" width="267" height="267" alt="Мороженое cливочно-кофейное с кусочками шоколада">
-			<h3>3800/кг</h3>
-			<p>Сливочно-кофейное с кусочками шоколада</p>
-		</div>
-		<div class="types-ice_cream">
-			<img src="" width="267" height="267" alt="Мороженое cливочно-клубничное с присыпкой из белого шоколада">
-			<h3>355/кг</h3>
-			<p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-		</div>
-		<div class="types-ice_cream">
-			<img src="" width="267" height="267" alt="Мороженое сливочное крем-брюле с карамельной подливкой">
-			<h3>415/кг</h3>
-			<p>Сливочное крем-брюле с карамельной подливкой</p>
-		</div>
+		<ul class="cream-list">
+			<li class="cream-item">
+				<img src="img/creamy-additives-1.png" width="267" height="267" alt="Мороженое сливочное с апельсиновым джемом и цитрусовой стружкой">
+				<h3>
+					<span>310/кг</span>
+					<a href="#0">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				</h3>
+			</li >
+			<li class="cream-item">
+				<img src="img/creamy-additives-2.png" width="267" height="267" alt="Мороженое cливочно-кофейное с кусочками шоколада">
+				<h3>
+					<span>380/кг</span>
+					<a href="#0">Сливочно-кофейное с кусочками шоколада</a>
+				</h3>
+			</li>
+			<li class="cream-item">
+				<img src="img/creamy-additives-3.png" width="267" height="267" alt="Мороженое cливочно-клубничное с присыпкой из белого шоколада">
+				<h3>
+					<span>355/кг</span>
+					<a href="#0">Сливочно-клубничное с присыпкой из белого шоколада</a>
+				</h3>
+			</li>
+			<li class="cream-item">
+				<img src="img/creamy-additives-4.png" width="267" height="267" alt="Мороженое сливочное крем-брюле с карамельной подливкой">
+				<h3>
+					<span>415/кг</span>
+					<a href="#0">Сливочное крем-брюле с карамельной подливкой</a>
+				</h3>
+			</li>
+		</ul>
 	</section>
-	<section class="information-shop">
-		<h4>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороже</h4>
+	<section class="production-ice-cream">
+		<h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороже</h3>
 		<p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
 		<p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингридиенты и добавки произведены из натурального, экологически чистого сырья.</p>
 		<p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
@@ -137,15 +149,47 @@
 			</form>
 		</div>
 	</section>
-
-	
 	<section class="maps-contacts">
 		<img src="" width="1250" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
 		<div>
-			<p>Адрес главного офиса и офлайн-магазина:</p>
+			<p class="feedback-form">
+				Адрес главного офиса и офлайн-магазина:<br>
+				<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b><br>
+				Для заказов по телефону:<br>
+				<b>8 812 450-25-25</b><br>
+				(с 10 до 20 ежедневно) 
+			</p>
 		</div>
 	</section>
 </main>
+<footer class="main-footer">
+	<div class="footer-social">
+		<a class="social-button twitter-icon" href="#0">Твиттер</a>
+		<a class="social-button instagram-icon" href="#0">Инстаграм</a>
+		<a class="social-button facebook-icon" href="#0">Фейсбук</a>
+		<a class="social-button vcontacte-icon" href="#0">ВК</a>
+	</div>
+	<ul class="information-company">
+		<li class="supplier-icon"><a href="#0">Для поставщиков</a></li>
+		<li><a href="#0">Наши документы</a></li>
+		<li><a href="#0">О производстве </a></li>
+		<li><a href="#0">Экологические стандарты</a></li>
+	</ul>
+	<p class="footer-copyright">
+		<a class="akademy" href="https://htmlacademy.ru">HTML Academy</a>
+		Сделано в HTML Academy © 2017
+	</p>
+</footer>
+<!-- <section class="modal-feedback">
+	<h3>Мы обязательно вам ответим!</h3>
+	<form>
+		<input type="text" name="name" placeholder="Как вас зовут?">
+		<input type="email" name="email" placeholder="Ваша почта для ответа?">
+		<textarea name="appointment-letter" rows="8" cols="70" placeholder="Напишите что-нибудь..."></textarea>
+		<button class="button" type="submit">Отправить</button>
+	</form>	
+	<button class="modal-close" type="button">Закрыть</button>
+</section> -->
 </div>
 </div>
 </body>
