@@ -1,0 +1,305 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url(../fonts/Roboto.woff2) format('woff2'), url(../fonts/Roboto.woff) format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Robotobold';
+	src: url(../fonts/Robotobold.woff2) format('woff2'), url(../fonts/Robotobold.woff) format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Robotomedium';
+	src: url(../fonts/Robotomedium.woff2) format('woff2'), url(../fonts/Robotomedium.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+	background-color: #849d8f;
+}
+
+/*img {
+width: 100%;
+height: auto
+}*/
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.site-navigation {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	text-decoration: underline;
+}
+.user-navigation,
+.operating-mode-contacts {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+}
+
+.operating-mode-contacts {
+	font-weight: 700;
+}
+.operating-mode-contacts span {
+	font-size: 22px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.site-navigation,
+.user-navigation,
+.user-navigation-option,
+.slider-list,
+.cream-list,
+.information-company {
+	list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus,
+.site-navigation a:active,
+.user-navigation a:active {
+	color: #ffbc9e;
+}
+
+.slider h2 {
+	font-size: 60px;
+	line-height: 60px;
+}
+
+.slider-item a,
+.banners-product a,
+.mailing button,
+.feedback-form button {
+	font-size: 32px;
+	line-height: 44px;
+	font-weight: 700;
+	color: #ffffff;
+	padding: 15px 40px;
+	border-radius: 40px;
+	background: linear-gradient(to top, #e74a35, #f26843);
+	box-shadow: 0 2px 2px rgb(172, 16, 0, .64);
+	text-shadow: 0 2px 2px rgba(160, 32, 11, 0.76);
+}
+
+.additive-raspberry,
+.additive-chocolate {
+	width: 560px;
+}
+
+.additive-raspberry {
+	background-color: #cb5c76;
+	background: url("../img/crimson-background.png") no-repeat;
+}
+
+.additive-chocolate {
+	background-color: #452413;
+	background: url("../img/chocolate-background.png") no-repeat;
+}
+
+.banners-product h3 {
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+}
+
+.banners-product a,
+.mailing button,
+.feedback-form b,
+.feedback-form button {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+
+.cream-item h3 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.cream-item span {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.cream-item h3,
+.cream-item span {
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.cream-list li {
+	width: 270px;
+}
+
+.cream-item a,
+.production-ice-cream p,
+.news p,
+.mailing p {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
+}
+.cream-item a {
+	color: #ffffff;
+	text-shadow: none;
+}
+
+.production-ice-cream {
+	background: url("../img/wafer-background.png") no-repeat;
+}
+
+.production-ice-cream h3,
+.news a {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #323232;
+}
+
+.production-ice-cream p {
+	font-weight: 400;
+	color: #323232;
+}
+
+.news,
+.mailing {
+	width: 560px;
+}
+
+.news {
+	background: url("../img/strawberry-background.png") no-repeat;
+}
+
+.news p {
+	color: #323232;
+}
+
+.news a {
+	width: 290px;
+	display: inline-block;
+	text-decoration: underline;
+}
+
+.mailing {
+	background-color: #f8f7f4;
+	border: 6px solid;
+	border-image: url(../img/post-background.png);
+	border-image-slice: 8;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+
+.mailing p {
+	color: #5a5a5a;
+	font-weight: 400;
+}
+.mailing input {
+	width: 368px;
+	height: 45px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px
+}
+
+.mailing input[placeholder] {
+	padding-left: 15px;
+}
+
+.mailing button,
+.feedback-form button {
+	border: none;
+}
+
+.maps-contacts {
+	width: 100%;
+}
+
+.feedback-form {
+	width: 300px;
+	background-color: white;
+	color: #323232;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: 400;
+	border-radius: 15px;
+}
+
+.footer-social {
+	font-size: 0;
+	line-height: 0;
+}
+
+.twitter-icon {
+	background: url(../img/twitter.svg) no-repeat center center;
+}
+
+.instagram-icon {
+	background: url(../img/instagram.svg) no-repeat center center;
+}
+
+.facebook-icon {
+	background: url(../img/fb.svg) no-repeat center center;
+}
+
+.vcontacte-icon {
+	background: url(../img/vk.svg) no-repeat center center;
+}
+
+.footer-social a {
+	width: 32px;
+	height: 32px;
+	margin: 0 10px;
+	display: inline-block;
+	opacity: .8;
+	border: 2px solid rgba(255, 255, 255, .5);
+	border-radius: 50%;
+}
+
+.information-company a {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #ffffff;
+	border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.supplier-icon a {
+	font-weight: 700;
+}
+
+.footer-copyright {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #ffffff;
+}
