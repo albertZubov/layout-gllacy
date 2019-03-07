@@ -28,6 +28,7 @@
 		</ul>
 		<div class="user-navigation">
 			<form class="search-form" action="#0" method="post">
+				<input name="search" type="search">
 				<button type="submit">Поиск</button>
 			</form>
 			<ul class="user-navigation-option">
@@ -66,9 +67,9 @@
 	</div>		
 </nav>
 <div class="operating-mode-contacts">
-	<p>С 10 до 20, ежедневно</p>
-	<p>8 812 450-25-25</p>
-</div>
+	<p>С 10 до 20, ежедневно <br>
+		<span>8 812 450-25-25</span></p>
+	</div>
 </header>
 <main class="main-contents">
 	<ul class="breadcrumbs">
@@ -82,7 +83,7 @@
 		<form class="filters-ice-cream" action="#0" method="post">
 			<fieldset class="filters-sorting">
 				<legend>Сортировка:</legend>
-				<select size="4">
+				<select size="1">
 					<option value="по популярности" selected>по популярности</option>
 					<option value="сначала недорогие">сначала недорогие</option>
 					<option value="сначала дорогие">сначала дорогие</option>
@@ -118,8 +119,8 @@
 				</ul>
 			</fieldset>
 		</form>
-		<form>
-			<fieldset class="filters-filler">
+		<form class="filters-filler">
+			<fieldset>
 				<legend>Наполнители:</legend>
 				<input class="visually-hidden filter-input-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
 				<input class="visually-hidden filter-input-checkbox" type="checkbox" name="sugar" id="sugar" checked>
@@ -134,7 +135,7 @@
 						<label for="sugar">сахарные присыпки</label>
 					</li>
 					<li class="filter-input">
-						<label for="fruit">Фрукты</label>
+						<label for="fruit">фрукты</label>
 					</li>
 					<li class="filter-input">
 						<label for="syrup">сиропы</label>
@@ -235,7 +236,7 @@
 			</li>
 		</ul>
 		<ul class="pagination">
-			<li><a></a>Назад</li>
+			<li><a>Назад</a></li>
 			<li class="pagination-item"><a>1</a></li>
 			<li><a href="#0">2</a></li>
 			<li><a href="#0">3</a></li>
