@@ -297,22 +297,18 @@ a {
 	outline: 0;
 }
 
-.additive-raspberry,
-.additive-chocolate {
-	width: 562px;
-	border-radius: 15px;
-}
-
 .additive-raspberry {
 	background-color: #cb5c76;
 	background: url("../img/crimson-background.png") no-repeat;
 	background-size: cover;
+	margin-right: 13px;
 }
 
 .additive-chocolate {
 	background-color: #452413;
 	background: url("../img/chocolate-background.png") no-repeat;
 	background-size: cover;
+	margin-left: 13px;
 }
 
 .banners-product h3,
@@ -337,6 +333,8 @@ a {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 100%;
+	width: 50%;
+	border-radius: 15px;
 }
 
 .banners-product a,
@@ -495,6 +493,8 @@ a {
 .news {
 	background-color: #ffffff;
 	background: url("../img/strawberry-background.png") no-repeat;
+	background-size: cover;
+	margin-right: 13px;
 }
 
 .news p {
@@ -504,7 +504,7 @@ a {
 }
 
 .news a {
-	width: 290px;
+	width: 55%;
 	display: inline-block;
 	text-decoration: underline;
 }
@@ -519,17 +519,18 @@ a {
 	border-radius: 10px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	margin-left: 13px;
 }
 
 .mailing p {
 	color: #5a5a5a;
 	font-weight: 400;
-	margin-top: 28px;
+	margin: 0;
 	margin-bottom: 34px;
 }
 
 .mailing form {
-	margin-bottom: 35px;
+	display: flex;
 }
 
 .mailing button,
@@ -593,7 +594,7 @@ a {
 	right: 0;
 	top: 61px;
 	z-index: 5;
-	padding-left: 25px;
+	padding: 31px 25px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -1048,7 +1049,6 @@ input[type=password],
 input[type=search],
 input[type=text],
 textarea {
-	width: 100%;
 	padding: 15px 0 15px 15px;
 	border-radius: 5px;
 	border: 1px solid #d3d3d2;
@@ -1057,6 +1057,10 @@ textarea {
 	line-height: 24px;
 	font-weight: 400;
 	color: #999;
+}
+
+.user-navigation input {
+	width: 100%;
 }
 
 /*Сетка на флексах*/
@@ -1710,9 +1714,6 @@ textarea {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
 	margin-bottom: 40px;
 }
 
@@ -1783,6 +1784,8 @@ textarea {
 	width: 61px;
 	height: 61px;
 	position: absolute;
+	top: 0;
+	left: 0;
 	background: url(../img/hit.svg);
 	z-index: 3;
 }
@@ -1855,16 +1858,14 @@ textarea {
 
 .news_blogs-subscription div {
 	border-radius: 15px;
-	padding-left: 20px;
+	padding: 25px 20px 35px 20px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	width: 560px;
+	width: 50%;
 }
 
 .feedback-form p {
-	width: 250px;
-	margin-top: 30px;
-	margin-bottom: 23px;
+	margin: 0;
 	white-space: pre-line;
 }
 
@@ -1879,7 +1880,6 @@ textarea {
 }
 
 .feedback-form button {
-	margin-bottom: 30px;
 	width: 250px;
 	height: 45px;
 	line-height: 45px;
@@ -1902,7 +1902,7 @@ textarea {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	width: 315px;
+	width: 30%;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 	padding: 0;
@@ -1926,11 +1926,12 @@ textarea {
 	top: 120px;
 	left: 50%;
 	margin-left: -239px;
-	padding: 0 25px;
+	padding: 20px 25px 25px 25px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border-radius: 10px;
 	display: none;
+	box-sizing: border-box;
 }
 
 .modal {
@@ -1940,8 +1941,7 @@ textarea {
 }
 
 .modal-feedback h3 {
-	margin-top: 16px;
-	margin-bottom: 18px;
+	margin: 0;
 }
 
 .modal-feedback .button {
@@ -1955,14 +1955,7 @@ textarea {
 	margin-bottom: 3px;
 }
 
-.modal-feedback textarea {
-	padding-top: 12px;
-	width: 430px;
-	height: 155px;
-}
-
 .modal-feedback form {
-	height: 355px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1970,10 +1963,6 @@ textarea {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	margin-bottom: 25px;
 }
 
 .modal-close {
