@@ -369,6 +369,13 @@ a {
 	z-index: 3;
 }
 
+.cream-item span::before {
+	content: "₽";
+	font-weight: 500;
+	font-size: 42px;
+	line-height: 45px;
+}
+
 .cream-item span,
 .catalog-item span {
 	font-size: 30px;
@@ -699,8 +706,20 @@ a {
 }
 
 .breadcrumbs a {
+	position: relative;
 	margin-right: 10px;
 	font-weight: 400;
+}
+
+.breadcrumbs a::after {
+	content: "»";
+	position: absolute;
+	top: 0px;
+	right: -10px;
+}
+
+.breadcrumbs li:last-child a::after {
+	display: none;
 }
 
 .breadcrumbs a:not([href]),
@@ -731,6 +750,7 @@ a {
 .basket-link-icon {
 	background-color: rgba(248, 247, 244, .2);
 	border-radius: 20px;
+	line-height: 36px;
 }
 
 .filters-sorting select {
@@ -738,9 +758,8 @@ a {
 	border: none;
 	color: #ffffff;
 	font-weight: 500;
-	width: 195px;
-	height: 35px;
 	padding-left: 15px;
+	padding-right: 33px;
 	-webkit-appearance: none;
 	background: rgba(248, 247, 244, .2) url(../img/icon-down-dir.svg) no-repeat 90% center;
 }
@@ -763,8 +782,8 @@ a {
 
 .price {
 	position: relative;
-	width: 220px;
-	height: 35px;
+	width: 218px;
+	height: 36px;
 	padding: 0 20px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -793,11 +812,11 @@ a {
 
 .price::before {
 	content: "";
-	width: 180px;
+	display: block;
+	width: 178px;
 	height: 4px;
 	position: absolute;
 	top: calc(50% - 2px);
-	left: 20px;
 	background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, rgba(255, 255, 255, .5)), color-stop(10%, rgba(255, 255, 255, 1)), color-stop(70%, rgba(255, 255, 255, 1)),color-stop(70%, rgba(255, 255, 255, .5)));
 	background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .5) 10%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 70%,rgba(255, 255, 255, .5) 70%);
 	background-image: -o-linear-gradient(left, rgba(255, 255, 255, .5) 10%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 70%,rgba(255, 255, 255, .5) 70%);
@@ -811,13 +830,8 @@ a {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	width: 415px;
-	height: 35px;
 	margin: 0;
-	padding: 0 16px;
+	padding-left: 14px;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
@@ -859,12 +873,7 @@ a {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	width: 700px;
-	height: 35px;
-	padding: 0 15px;
+	padding-left: 16px;
 	margin: 0;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -914,7 +923,6 @@ a {
 }
 
 .filters-ice-cream {
-	width: 860px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1059,6 +1067,10 @@ textarea {
 	color: #999;
 }
 
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+
 .user-navigation input {
 	width: 100%;
 }
@@ -1091,17 +1103,16 @@ textarea {
 	-webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, .40);
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, .40);
 	border-radius: 5px;
+	padding-top: 5px;
+	padding-bottom: 4px;
 }
 
 .catalog-menu a {
-	display: inline-block;
-	height: 34px;
+	display: block;
 	color: #000;
-	line-height: 34px;
-	padding-left: 20px;
-	width: 100%;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
+	line-height: 28px;
+	padding: 0 20px;
+	margin-bottom: 4px;
 }
 
 .catalog-menu a:hover {
@@ -1116,24 +1127,21 @@ textarea {
 
 .catalog-menu li:first-child a {
 	font-weight: 500;
+	margin-bottom: 5px;
 }
 
-.catalog-menu li:first-child a:hover {
-	border-radius: 5px 5px 0 0;
-}
-
-.catalog-menu li:last-child a:hover {
-	border-radius: 0 0 5px 5px;
+.catalog-menu li:last-child a {
+	margin-bottom: 0;
 }
 
 .catalog-menu li:first-child {
 	position: relative;
 }
 
-.catalog-menu li:first-child a::after {
+.catalog-menu li:first-child::after {
 	content: "";
 	position: absolute;
-	top: 33px;
+	top: 30px;
 	left: 7px;
 	width: 128px;
 	height: 1px;
@@ -1197,7 +1205,6 @@ textarea {
 	position: absolute;
 	left: -6px;
 	width: 145px;
-	height: 170px;
 	padding-top: 5px;
 	z-index: 3;
 }
@@ -1486,6 +1493,7 @@ textarea {
 .search-form input:hover,
 .modal-feedback input:hover {
 	border: 2px solid rgba(154, 154, 154, .52);
+	padding: 14px 0 14px 14px;
 }
 
 .entrance-form input:focus,
@@ -1493,6 +1501,7 @@ textarea {
 .modal-feedback input:focus {
 	outline: none;
 	border: 2px solid rgba(46, 136, 228, .52);
+	padding: 14px 0 14px 14px;
 }
 
 .entrance-form button {
@@ -1541,6 +1550,7 @@ textarea {
 	-webkit-box-shadow: 0 20px 20px 0px rgba(0, 0, 0, .40);
 	box-shadow: 0 20px 20px 0px rgba(0, 0, 0, .40);
 	padding: 20px 15px;
+	box-sizing: border-box;
 }
 
 .search-wrapper {
