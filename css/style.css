@@ -244,8 +244,7 @@ a {
 	line-height: 60px;
 }
 
-.button,
-.banners-product a {
+.button {
 	display: inline-block;
 	text-align: center;
 	border-radius: 40px;
@@ -428,7 +427,7 @@ a {
 
 .production-ice-cream {
 	background-color: #f0e6ce;
-	background: url(../img/wafer-background-100px.png) center center;
+	background: url(../img/wafer-background.png) center center;
 	border-radius: 15px;
 	padding: 25px 23px 24px 20px;
 }
@@ -544,6 +543,7 @@ a {
 	top: 0;
 	left: 0;
 	height: 100%;
+	width: 100%;
 }
 
 .feedback-form {
@@ -658,21 +658,18 @@ a {
 	margin-top: -36px;
 }
 
-.breadcrumbs li {
-	margin-right: 5px;
-}
-
 .breadcrumbs a {
-	position: relative;
-	margin-right: 16px;
-	font-weight: 400;
+    position: relative;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 21px;
 }
 
 .breadcrumbs a::after {
-	content: "»";
-	position: absolute;
-	top: 0;
-	right: -15px;
+    content: "»";
+    position: absolute;
+    right: -14px;
+    top: -2px;
 }
 
 .breadcrumbs li:last-child a::after {
@@ -1390,15 +1387,15 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .cream-item .button-viewing {
-    position: absolute;
-    line-height: 44px;
-    padding: 0 16px;
-    bottom: -52px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 1;
-    display: none;
+	position: absolute;
+	line-height: 44px;
+	padding: 0 16px;
+	bottom: -52px;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+	z-index: 1;
+	display: none;
 }
 
 .login-link-icon::before {
@@ -1735,7 +1732,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	z-index: 4;
 }
 
-.hit-icon .cream-item::before {
+.hit-icon::before {
 	content: "";
 	width: 61px;
 	height: 61px;
